@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:background="#D8D8D8"
         android:id="@+id/mediaRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

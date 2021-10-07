@@ -4,19 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:elevation="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/tvTitleItemMedia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Hello world" />
 
         <ImageView
             android:id="@+id/ivMainItemMedia"
@@ -24,8 +17,18 @@
             android:layout_height="0dp"
             android:scaleType="centerCrop"
             android:src="@drawable/placeholder_no_image"
+            app:layout_constraintBottom_toTopOf="@id/tvTitleItemMedia"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleItemMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTitleItemMedia" />
+            tools:text="Hello world" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
