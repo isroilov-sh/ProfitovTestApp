@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.moviestestapp"
+        applicationId "com.example.testapp"
         minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
@@ -27,8 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug{
-            def api_token = "fl6atXeD4SPFzO0X2GGlILnHhPMFVwcE"
-            buildConfigField "String", "API_KEY", "\"$api_token\""
+
         }
     }
 
